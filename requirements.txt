@@ -1,0 +1,37 @@
+# ============================================
+# 神经网络优化工具 - Python 依赖包
+# ============================================
+# 安装方式: pip install -r requirements.txt
+# 建议使用国内镜像源加速: 
+# pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+# ============================================
+
+# ---- Web 框架 ----
+fastapi>=0.104.0          # FastAPI Web 框架
+uvicorn>=0.24.0           # ASGI 服务器（用于运行 FastAPI）
+python-multipart>=0.0.6   # 支持文件上传
+starlette>=0.27.0         # ASGI 框架（FastAPI 依赖）
+pydantic>=2.0.0           # 数据验证（FastAPI 依赖）
+
+# ---- 深度学习框架 ----
+torch>=2.0.0              # PyTorch 深度学习框架
+torchvision>=0.15.0       # PyTorch 视觉库（包含数据集和 transforms）
+
+# ---- 数据处理 ----
+numpy>=1.24.0             # 数值计算库
+
+# ---- HTTP 请求 ----
+requests>=2.31.0          # HTTP 客户端（用于调用 LLM API）
+
+# ---- 模型可视化 ----
+netron>=7.9.0             # 神经网络模型可视化工具
+
+# ---- ONNX 推理 ----
+onnxruntime>=1.15.0       # ONNX Runtime（用于优化推理）
+onnx>=1.14.0              # ONNX 模型格式
+
+# ---- 配置文件解析 ----
+pyyaml>=6.0               # YAML 配置文件解析（可选，用于 .env 文件）
+python-dotenv>=1.0.0      # 环境变量加载（可选）
+
+onnxruntime-gpu
